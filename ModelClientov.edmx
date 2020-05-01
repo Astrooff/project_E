@@ -9,7 +9,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" />
           <Property Name="Name" Type="nvarchar(max)" />
           <Property Name="SecondName" Type="nvarchar(max)" />
           <Property Name="SurName" Type="nvarchar(max)" />
@@ -28,14 +28,14 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int32" Nullable="false" />
           <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="SecondName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="SurName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
-        <EntityContainer Name="progect_EEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="progect_EEntities2" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="ClientsSet" EntityType="Self.ClientsSet" />
         </EntityContainer>
       </Schema>
@@ -43,7 +43,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище progect_EModelContainer" CdmEntityContainer="progect_EEntities">
+        <EntityContainerMapping StorageEntityContainer="Хранилище progect_EModelContainer" CdmEntityContainer="progect_EEntities2">
           <EntitySetMapping Name="ClientsSet">
             <EntityTypeMapping TypeName="progect_EModel.ClientsSet">
               <MappingFragment StoreEntitySet="ClientsSet">

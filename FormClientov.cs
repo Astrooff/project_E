@@ -30,7 +30,7 @@ namespace project_E
             Program.wftDb.SaveChanges();
             ShowClient();
         }
-        private void ShowClient()
+         void ShowClient()
         {
             listViewClient.Items.Clear();
             foreach (ClientsSet clientsSet in Program.wftDb.ClientsSet)

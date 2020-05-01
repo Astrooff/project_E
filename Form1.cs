@@ -22,5 +22,11 @@ namespace project_E
             Form formClientov = new FormClientov();
             formClientov.Show();
         }
+
+        private void buttonOpenAgents_Click(object sender, EventArgs e)
+        {
+            Form formAgents = new FormAgents();
+            formAgents.Show();
+        }
     }
 }
