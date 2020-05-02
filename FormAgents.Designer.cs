@@ -37,6 +37,10 @@
             this.textBoxSecondName = new System.Windows.Forms.TextBox();
             this.textBoxDealShare = new System.Windows.Forms.TextBox();
             this.listViewAgents = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Фами = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonChange = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
@@ -45,7 +49,7 @@
             // Name
             // 
             this.Name.AutoSize = true;
-            this.Name.Location = new System.Drawing.Point(117, 50);
+            this.Name.Location = new System.Drawing.Point(3, 5);
             this.Name.Name = "Name";
             this.Name.Size = new System.Drawing.Size(29, 13);
             this.Name.TabIndex = 0;
@@ -54,7 +58,7 @@
             // SecondName
             // 
             this.SecondName.AutoSize = true;
-            this.SecondName.Location = new System.Drawing.Point(117, 128);
+            this.SecondName.Location = new System.Drawing.Point(3, 83);
             this.SecondName.Name = "SecondName";
             this.SecondName.Size = new System.Drawing.Size(54, 13);
             this.SecondName.TabIndex = 1;
@@ -63,7 +67,7 @@
             // SurName
             // 
             this.SurName.AutoSize = true;
-            this.SurName.Location = new System.Drawing.Point(119, 89);
+            this.SurName.Location = new System.Drawing.Point(5, 44);
             this.SurName.Name = "SurName";
             this.SurName.Size = new System.Drawing.Size(56, 13);
             this.SurName.TabIndex = 2;
@@ -72,7 +76,7 @@
             // DealShare
             // 
             this.DealShare.AutoSize = true;
-            this.DealShare.Location = new System.Drawing.Point(117, 167);
+            this.DealShare.Location = new System.Drawing.Point(3, 122);
             this.DealShare.Name = "DealShare";
             this.DealShare.Size = new System.Drawing.Size(58, 13);
             this.DealShare.TabIndex = 3;
@@ -80,44 +84,69 @@
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(120, 66);
+            this.textBoxName.Location = new System.Drawing.Point(6, 21);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(100, 20);
             this.textBoxName.TabIndex = 4;
             // 
             // textBoxSurName
             // 
-            this.textBoxSurName.Location = new System.Drawing.Point(120, 105);
+            this.textBoxSurName.Location = new System.Drawing.Point(6, 60);
             this.textBoxSurName.Name = "textBoxSurName";
             this.textBoxSurName.Size = new System.Drawing.Size(100, 20);
             this.textBoxSurName.TabIndex = 5;
             // 
             // textBoxSecondName
             // 
-            this.textBoxSecondName.Location = new System.Drawing.Point(120, 144);
+            this.textBoxSecondName.Location = new System.Drawing.Point(6, 99);
             this.textBoxSecondName.Name = "textBoxSecondName";
             this.textBoxSecondName.Size = new System.Drawing.Size(100, 20);
             this.textBoxSecondName.TabIndex = 6;
             // 
             // textBoxDealShare
             // 
-            this.textBoxDealShare.Location = new System.Drawing.Point(120, 183);
+            this.textBoxDealShare.Location = new System.Drawing.Point(6, 138);
             this.textBoxDealShare.Name = "textBoxDealShare";
             this.textBoxDealShare.Size = new System.Drawing.Size(100, 20);
             this.textBoxDealShare.TabIndex = 7;
             // 
             // listViewAgents
             // 
+            this.listViewAgents.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.Фами,
+            this.columnHeader2,
+            this.columnHeader3});
+            this.listViewAgents.FullRowSelect = true;
+            this.listViewAgents.GridLines = true;
             this.listViewAgents.HideSelection = false;
-            this.listViewAgents.Location = new System.Drawing.Point(264, 66);
+            this.listViewAgents.Location = new System.Drawing.Point(150, 21);
+            this.listViewAgents.MultiSelect = false;
             this.listViewAgents.Name = "listViewAgents";
-            this.listViewAgents.Size = new System.Drawing.Size(462, 137);
+            this.listViewAgents.Size = new System.Drawing.Size(244, 137);
             this.listViewAgents.TabIndex = 8;
             this.listViewAgents.UseCompatibleStateImageBehavior = false;
+            this.listViewAgents.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Имя";
+            // 
+            // Фами
+            // 
+            this.Фами.Text = "Фамилия";
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Отчество";
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Комиссия";
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(345, 321);
+            this.buttonAdd.Location = new System.Drawing.Point(160, 164);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(75, 23);
             this.buttonAdd.TabIndex = 9;
@@ -126,7 +155,7 @@
             // 
             // buttonChange
             // 
-            this.buttonChange.Location = new System.Drawing.Point(446, 321);
+            this.buttonChange.Location = new System.Drawing.Point(241, 164);
             this.buttonChange.Name = "buttonChange";
             this.buttonChange.Size = new System.Drawing.Size(75, 23);
             this.buttonChange.TabIndex = 10;
@@ -135,7 +164,7 @@
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(550, 321);
+            this.buttonDelete.Location = new System.Drawing.Point(319, 164);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(75, 23);
             this.buttonDelete.TabIndex = 11;
@@ -146,7 +175,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(404, 198);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonChange);
             this.Controls.Add(this.buttonAdd);
@@ -181,5 +210,9 @@
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Button buttonChange;
         private System.Windows.Forms.Button buttonDelete;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader Фами;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
     }
 }

@@ -90,11 +90,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="ModelClientov.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelClientov.edmx</DependentUpon>
-    </Compile>
     <Compile Include="ModelAgentov.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -109,6 +104,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ModelAgentov.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelClientov.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelClientov.edmx</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -134,15 +134,15 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ModelClientov.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="ModelClientov.edmx.diagram">
-      <DependentUpon>ModelClientov.edmx</DependentUpon>
-    </None>
     <EntityDeploy Include="ModelAgentov.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ModelAgentov.Designer.cs</LastGenOutput>
     </EntityDeploy>
     <None Include="ModelAgentov.edmx.diagram">
       <DependentUpon>ModelAgentov.edmx</DependentUpon>
+    </None>
+    <None Include="ModelClientov.edmx.diagram">
+      <DependentUpon>ModelClientov.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

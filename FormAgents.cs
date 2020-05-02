@@ -24,21 +24,23 @@ namespace project_E
             {
                 ListViewItem item = new ListViewItem(new string[]
                 {
-                    agentsSet.Id.ToString(), agentsSet.Name, agentsSet.SecondName, agentsSet.SurName, 
-                });
-                item.Tag = agentsSet;
+                    agentsSet.Id.ToString(), agentsSet.Name, agentsSet.SecondName, agentsSet.SurName,  agentsSet.DealShare.ToString()
+            });
+                
+                    item.Tag = agentsSet ;
                 listViewAgents.Items.Add(item);
 
             }
             listViewAgents.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
 
-        }
+        }   
         private void FormAgents_Load(object sender, EventArgs e)
         {
             AgentsSet agentsSet = new AgentsSet();
             agentsSet.Name = textBoxName.Text;
             agentsSet.SurName = textBoxSurName.Text;
             agentsSet.SecondName = textBoxSecondName.Text;
+            agentsSet.DealShare = Convert.ToInt32(textBoxDealShare.Text); 
             Program.newDb.AgentsSet.Add(agentsSet);
             Program.newDb.SaveChanges();
             ShowAgents();
