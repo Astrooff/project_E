@@ -13,10 +13,10 @@ namespace project_E
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class progect_EEntities9 : DbContext
+    public partial class progect_EEntities10 : DbContext
     {
-        public progect_EEntities9()
-            : base("name=progect_EEntities9")
+        public progect_EEntities10()
+            : base("name=progect_EEntities10")
         {
         }
     

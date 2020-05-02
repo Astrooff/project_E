@@ -39,8 +39,8 @@
             this.textBoxSecondName = new System.Windows.Forms.TextBox();
             this.textBoxDealShare = new System.Windows.Forms.TextBox();
             this.listViewAgents = new System.Windows.Forms.ListView();
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Фами = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -128,8 +128,8 @@
             // listViewAgents
             // 
             this.listViewAgents.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
             this.columnHeader4,
+            this.columnHeader1,
             this.Фами,
             this.columnHeader2,
             this.columnHeader3});
@@ -145,15 +145,13 @@
             this.listViewAgents.View = System.Windows.Forms.View.Details;
             this.listViewAgents.SelectedIndexChanged += new System.EventHandler(this.listViewAgents_SelectedIndexChanged);
             // 
-            // columnHeader4
-            // 
-            this.columnHeader4.DisplayIndex = 0;
-            this.columnHeader4.Text = "ID";
-            // 
             // columnHeader1
             // 
-            this.columnHeader1.DisplayIndex = 1;
             this.columnHeader1.Text = "Имя";
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "ID";
             // 
             // Фами
             // 
