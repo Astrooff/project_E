@@ -20,7 +20,7 @@ namespace project_E
         void ShowAgents()
         {
             listViewAgents.Items.Clear();
-            foreach (AgentsSet agentsSet in Program.newDb.AgentsSet)
+            foreach (AgentsSet agentsSet in Program.wftDb.AgentsSet)
             {
                 ListViewItem item = new ListViewItem(new string[]
                 {
@@ -41,8 +41,8 @@ namespace project_E
             agentsSet.SurName = textBoxSurName.Text;
             agentsSet.SecondName = textBoxSecondName.Text;
             agentsSet.DealShare = Convert.ToInt32(textBoxDealShare.Text);
-            Program.newDb.AgentsSet.Add(agentsSet);
-            Program.newDb.SaveChanges();
+            Program.wftDb.AgentsSet.Add(agentsSet);
+            Program.wftDb.SaveChanges();
             ShowAgents();
         }
     }
