@@ -40,7 +40,7 @@ namespace project_E
             agentsSet.Name = textBoxName.Text;
             agentsSet.SurName = textBoxSurName.Text;
             agentsSet.SecondName = textBoxSecondName.Text;
-            agentsSet.DealShare = Convert.ToInt32(textBoxDealShare.Text); 
+            agentsSet.DealShare = Convert.ToInt32(textBoxDealShare.Text);
             Program.newDb.AgentsSet.Add(agentsSet);
             Program.newDb.SaveChanges();
             ShowAgents();

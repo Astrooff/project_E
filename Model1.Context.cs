@@ -13,10 +13,10 @@ namespace project_E
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class progect_EEntities2 : DbContext
+    public partial class progect_EEntities4 : DbContext
     {
-        public progect_EEntities2()
-            : base("name=progect_EEntities2")
+        public progect_EEntities4()
+            : base("name=progect_EEntities4")
         {
         }
     
@@ -25,6 +25,7 @@ namespace project_E
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<AgentsSet> AgentsSet { get; set; }
         public virtual DbSet<ClientsSet> ClientsSet { get; set; }
     }
 }

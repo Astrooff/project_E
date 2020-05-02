@@ -56,7 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AgentsSet.cs">
-      <DependentUpon>ModelAgentov.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="ClientovEntites.cs" />
     <Compile Include="ClientsSet.cs">
@@ -90,25 +90,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="ModelAgentov.Context.cs">
+    <Compile Include="Model1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ModelAgentov.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ModelAgentov.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelAgentov.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ModelAgentov.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelAgentov.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="ModelClientov.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelClientov.edmx</DependentUpon>
+      <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -130,19 +115,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EntityDeploy Include="ModelClientov.edmx">
+    <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ModelClientov.Designer.cs</LastGenOutput>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <EntityDeploy Include="ModelAgentov.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ModelAgentov.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="ModelAgentov.edmx.diagram">
-      <DependentUpon>ModelAgentov.edmx</DependentUpon>
-    </None>
-    <None Include="ModelClientov.edmx.diagram">
-      <DependentUpon>ModelClientov.edmx</DependentUpon>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -164,23 +142,13 @@
   <ItemGroup>
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelClientov.edmx</DependentUpon>
+      <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelClientov.edmx</DependentUpon>
+      <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
-    </Content>
-    <Content Include="ModelAgentov.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelAgentov.edmx</DependentUpon>
-      <LastGenOutput>ModelAgentov.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="ModelAgentov.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelAgentov.edmx</DependentUpon>
-      <LastGenOutput>ModelAgentov.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
