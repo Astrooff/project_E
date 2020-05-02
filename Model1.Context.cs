@@ -13,10 +13,10 @@ namespace project_E
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class progect_EEntities4 : DbContext
+    public partial class progect_EEntities9 : DbContext
     {
-        public progect_EEntities4()
-            : base("name=progect_EEntities4")
+        public progect_EEntities9()
+            : base("name=progect_EEntities9")
         {
         }
     
@@ -27,5 +27,6 @@ namespace project_E
     
         public virtual DbSet<AgentsSet> AgentsSet { get; set; }
         public virtual DbSet<ClientsSet> ClientsSet { get; set; }
+        public virtual DbSet<RealEstateSet> RealEstateSet { get; set; }
     }
 }

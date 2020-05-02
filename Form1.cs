@@ -28,5 +28,11 @@ namespace project_E
             Form formAgents = new FormAgents();
             formAgents.Show();
         }
+
+        private void buttonOpenRealEstates_Click(object sender, EventArgs e)
+        {
+            Form formRealEstate = new FormRealEstate();
+            formRealEstate.Show();
+        }
     }
 }

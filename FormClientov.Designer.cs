@@ -192,23 +192,23 @@
             // 
             // Name
             // 
-            this.Name.Text = "Name";
+            this.Name.Text = "Имя";
             // 
             // SecondName
             // 
-            this.SecondName.Text = "SecondName";
+            this.SecondName.Text = "Отчество";
             // 
             // SurName
             // 
-            this.SurName.Text = "SurName";
+            this.SurName.Text = "Фамилия";
             // 
             // Phone
             // 
-            this.Phone.Text = "Phone";
+            this.Phone.Text = "Номер телефона";
             // 
             // Email
             // 
-            this.Email.Text = "Email";
+            this.Email.Text = "Почта";
             // 
             // imageList1
             // 
@@ -248,6 +248,7 @@
             this.Controls.Add(this.buttonAdd);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Клиенты";
+            this.Load += new System.EventHandler(this.FormClientov_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

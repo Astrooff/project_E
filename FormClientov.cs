@@ -107,5 +107,11 @@ namespace project_E
                 MessageBox.Show("Невозможно удалить, эта кнопка используется!","Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
         }
+
+        private void FormClientov_Load(object sender, EventArgs e)
+        {
+           
+
+        }
     }
 }
