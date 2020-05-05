@@ -34,5 +34,11 @@ namespace project_E
             Form formRealEstate = new FormRealEstate();
             formRealEstate.Show();
         }
+
+        private void buttonOpenDemands_Click(object sender, EventArgs e)
+        {
+            Form formSupply = new FormSupply();
+            formSupply.Show();
+        }
     }
 }

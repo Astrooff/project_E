@@ -8,7 +8,7 @@ namespace project_E
 {
     static class Program
     {
-        public static progect_EEntities10 wftDb = new progect_EEntities10();
+        public static progect_EEntities16 wftDb = new progect_EEntities16();
         
      /// <summary>
         /// Главная точка входа для приложения.

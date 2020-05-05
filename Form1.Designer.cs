@@ -98,6 +98,7 @@
             this.buttonOpenDemands.TabIndex = 5;
             this.buttonOpenDemands.Text = "Предложения";
             this.buttonOpenDemands.UseVisualStyleBackColor = true;
+            this.buttonOpenDemands.Click += new System.EventHandler(this.buttonOpenDemands_Click);
             // 
             // buttonOpenDeals
             // 
