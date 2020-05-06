@@ -470,7 +470,7 @@
             "Квартира",
             "Дом",
             "Земля"});
-            this.comboBoxType.Location = new System.Drawing.Point(25, 140);
+            this.comboBoxType.Location = new System.Drawing.Point(27, 140);
             this.comboBoxType.Name = "comboBoxType";
             this.comboBoxType.Size = new System.Drawing.Size(121, 21);
             this.comboBoxType.TabIndex = 27;

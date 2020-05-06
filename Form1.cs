@@ -37,6 +37,12 @@ namespace project_E
 
         private void buttonOpenDemands_Click(object sender, EventArgs e)
         {
+            Form formDemands = new Demands();
+            formDemands.Show();
+        }
+
+        private void buttonOpenSupplies_Click(object sender, EventArgs e)
+        {
             Form formSupply = new FormSupply();
             formSupply.Show();
         }

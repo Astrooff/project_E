@@ -122,7 +122,6 @@ namespace project_E
                 textBoxTotalArea.Text = "0";
             }
             RealEstateSet realEstate = new RealEstateSet();
-            //ссылки на обьекты
             realEstate.Address_City = textBoxAddress_City.Text;
             realEstate.Address_House = textBoxAddress_House.Text;
             realEstate.Address_Street = textBoxAddress_Street.Text;
@@ -130,7 +129,6 @@ namespace project_E
             realEstate.Coordinate_latitude = Convert.ToDouble(textBoxCoordinate_latitude.Text);
             realEstate.Coordinate_longitude = Convert.ToDouble(textBoxCoordinate_longitude.Text);
             realEstate.TotalArea = Convert.ToDouble(textBoxTotalArea.Text);
-            //тип квартир
             if (comboBoxType.SelectedIndex == 0)
             {
                 textBoxRooms.Text = "0";
@@ -140,7 +138,6 @@ namespace project_E
                 realEstate.Floor = Convert.ToInt32(textBoxFloor.Text);
 
             }
-            //дом
             else if (comboBoxType.SelectedIndex == 1)
             {
                 textBoxTotalFloors.Text = "0";
@@ -169,9 +166,15 @@ namespace project_E
                 {
                     ListViewItem item = new ListViewItem(new string[]
                     {
-                     realEstate.Address_City,realEstate.Address_Street,realEstate.Address_House,
-                     realEstate.Address_Number,realEstate.Coordinate_latitude.ToString(),realEstate.Coordinate_longitude.ToString(),
-                     realEstate.TotalArea.ToString(),realEstate.Rooms.ToString(),realEstate.TotalFloors.ToString()
+                     realEstate.Address_City,
+                     realEstate.Address_Street,
+                     realEstate.Address_House,
+                     realEstate.Address_Number,
+                     realEstate.Coordinate_latitude.ToString(),
+                     realEstate.Coordinate_longitude.ToString(),
+                     realEstate.TotalArea.ToString(),
+                     realEstate.Rooms.ToString(),
+                     realEstate.TotalFloors.ToString()
                     });
                     item.Tag = realEstate;
                     listViewRealEstateSet_Apartment.Items.Add(item);

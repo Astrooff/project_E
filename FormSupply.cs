@@ -96,7 +96,10 @@ namespace project_E
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            if (comboBoxAgents.SelectedItem != null && comboBoxClients.SelectedItem != null && comboBoxRealEstate.SelectedItem != null && textBoxPrice.Text != " ")
+            if (comboBoxAgents.SelectedItem != null &&
+                comboBoxClients.SelectedItem != null &&
+                comboBoxRealEstate.SelectedItem != null &&
+                textBoxPrice.Text != " ")
             {
                 SupplySet supply = new SupplySet();
                 supply.IdAgent = Convert.ToInt32(comboBoxAgents.SelectedItem.ToString().Split('.')[0]);
