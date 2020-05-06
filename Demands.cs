@@ -158,6 +158,8 @@ namespace project_E
                 else if (comboBoxType.SelectedIndex == 1)
                 {
                     demand.Type = 1;
+                    demand.MinRooms = Convert.ToInt32(textBoxMinRooms.Text);
+                    demand.MaxRooms = Convert.ToInt32(textBoxMaxRooms.Text);
                     demand.MinFloors = Convert.ToInt32(textBoxMinFloors.Text);
                     demand.MaxFloors = Convert.ToInt32(textBoxMinFloors.Text);
                 }
