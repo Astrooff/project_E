@@ -15,6 +15,7 @@ namespace project_E
         public Menu()
         {
             InitializeComponent();
+            if (FormAuthorization.users.type == "agent") buttonOpenAgents.Enabled = false;
         }
 
         private void buttonOpenClients_Click(object sender, EventArgs e)
@@ -46,5 +47,13 @@ namespace project_E
             Form formSupply = new FormSupply();
             formSupply.Show();
         }
+
+        private void buttonOpenDeals_Click(object sender, EventArgs e)
+        {
+            Form formDeal = new FormDeal();
+            formDeal.Show();
+        }
+       
+        
     }
 }

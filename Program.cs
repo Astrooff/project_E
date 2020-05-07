@@ -8,7 +8,7 @@ namespace project_E
 {
     static class Program
     {
-        public static progect_EEntities16 wftDb = new progect_EEntities16();
+        public static progect_EEntities19 wftDb = new progect_EEntities19();
         
      /// <summary>
         /// Главная точка входа для приложения.
@@ -18,7 +18,7 @@ namespace project_E
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Menu());
+            Application.Run(new FormAuthorization());
         }
     }
 }

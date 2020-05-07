@@ -176,5 +176,15 @@ namespace project_E
                 MessageBox.Show("данные не удаляются", "ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void labelPrice_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxAgents_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

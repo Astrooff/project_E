@@ -39,8 +39,8 @@
             this.textBoxSecondName = new System.Windows.Forms.TextBox();
             this.textBoxDealShare = new System.Windows.Forms.TextBox();
             this.listViewAgents = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Фами = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -60,7 +60,7 @@
             // Name
             // 
             this.Name.AutoSize = true;
-            this.Name.Location = new System.Drawing.Point(68, 146);
+            this.Name.Location = new System.Drawing.Point(9, 150);
             this.Name.Name = "Name";
             this.Name.Size = new System.Drawing.Size(29, 13);
             this.Name.TabIndex = 0;
@@ -69,7 +69,7 @@
             // SecondName
             // 
             this.SecondName.AutoSize = true;
-            this.SecondName.Location = new System.Drawing.Point(68, 224);
+            this.SecondName.Location = new System.Drawing.Point(9, 228);
             this.SecondName.Name = "SecondName";
             this.SecondName.Size = new System.Drawing.Size(54, 13);
             this.SecondName.TabIndex = 1;
@@ -78,7 +78,7 @@
             // SurName
             // 
             this.SurName.AutoSize = true;
-            this.SurName.Location = new System.Drawing.Point(70, 185);
+            this.SurName.Location = new System.Drawing.Point(11, 189);
             this.SurName.Name = "SurName";
             this.SurName.Size = new System.Drawing.Size(56, 13);
             this.SurName.TabIndex = 2;
@@ -87,7 +87,7 @@
             // DealShare
             // 
             this.DealShare.AutoSize = true;
-            this.DealShare.Location = new System.Drawing.Point(68, 263);
+            this.DealShare.Location = new System.Drawing.Point(9, 267);
             this.DealShare.Name = "DealShare";
             this.DealShare.Size = new System.Drawing.Size(58, 13);
             this.DealShare.TabIndex = 3;
@@ -95,7 +95,7 @@
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(71, 162);
+            this.textBoxName.Location = new System.Drawing.Point(12, 166);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(140, 20);
             this.textBoxName.TabIndex = 4;
@@ -103,7 +103,7 @@
             // 
             // textBoxSurName
             // 
-            this.textBoxSurName.Location = new System.Drawing.Point(71, 201);
+            this.textBoxSurName.Location = new System.Drawing.Point(12, 205);
             this.textBoxSurName.Name = "textBoxSurName";
             this.textBoxSurName.Size = new System.Drawing.Size(140, 20);
             this.textBoxSurName.TabIndex = 5;
@@ -111,7 +111,7 @@
             // 
             // textBoxSecondName
             // 
-            this.textBoxSecondName.Location = new System.Drawing.Point(71, 240);
+            this.textBoxSecondName.Location = new System.Drawing.Point(12, 244);
             this.textBoxSecondName.Name = "textBoxSecondName";
             this.textBoxSecondName.Size = new System.Drawing.Size(140, 20);
             this.textBoxSecondName.TabIndex = 6;
@@ -119,7 +119,7 @@
             // 
             // textBoxDealShare
             // 
-            this.textBoxDealShare.Location = new System.Drawing.Point(71, 279);
+            this.textBoxDealShare.Location = new System.Drawing.Point(12, 283);
             this.textBoxDealShare.Name = "textBoxDealShare";
             this.textBoxDealShare.Size = new System.Drawing.Size(140, 20);
             this.textBoxDealShare.TabIndex = 7;
@@ -136,22 +136,22 @@
             this.listViewAgents.FullRowSelect = true;
             this.listViewAgents.GridLines = true;
             this.listViewAgents.HideSelection = false;
-            this.listViewAgents.Location = new System.Drawing.Point(276, 21);
+            this.listViewAgents.Location = new System.Drawing.Point(178, 12);
             this.listViewAgents.MultiSelect = false;
             this.listViewAgents.Name = "listViewAgents";
-            this.listViewAgents.Size = new System.Drawing.Size(322, 361);
+            this.listViewAgents.Size = new System.Drawing.Size(494, 361);
             this.listViewAgents.TabIndex = 8;
             this.listViewAgents.UseCompatibleStateImageBehavior = false;
             this.listViewAgents.View = System.Windows.Forms.View.Details;
             this.listViewAgents.SelectedIndexChanged += new System.EventHandler(this.listViewAgents_SelectedIndexChanged);
             // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Имя";
-            // 
             // columnHeader4
             // 
             this.columnHeader4.Text = "ID";
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Имя";
             // 
             // Фами
             // 
@@ -210,7 +210,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(71, 63);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 67);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(140, 70);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

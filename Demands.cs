@@ -371,5 +371,10 @@ namespace project_E
                 }
             }
         }
+
+        private void listViewRealEstateSet_Land_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
